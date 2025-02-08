@@ -19,7 +19,7 @@ load_dotenv()
 
 #Atribuir token
 open_api_sk = os.getenv("OPENAI_API_KEY")
-
+print(open_api_sk)
 
 # Lista de mensagem
 mensagem =  [SystemMessage("Traduza esse texto para inglês"),HumanMessage("Eu gosto de abacate")]
