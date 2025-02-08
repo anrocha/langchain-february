@@ -11,7 +11,8 @@ from langchain_openai import ChatOpenAI
 load_dotenv()
 
 #Atribuir token
-OPENAI_API_KEY = "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"
+open_api_sk = os.getenv("OPENAI_API_KEY")
+print(os.getenv("OPENAI_API_KEY"))
 
 
 # Lista de mensagem
