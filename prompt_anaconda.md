@@ -24,7 +24,6 @@ Another possibility is to create a symbolic link in one to the envs_dirs folders
 Utilizando a biblioteca python-dotenv. Utilizando essa biblioteca utilizo para buscar os valores e levar para dentro do código.
 
 ### Exemplo
-open = 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
 USUARIO = andre
 EMAIL = ${USUARIO}@hotmail.com
 
