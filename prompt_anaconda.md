@@ -21,7 +21,7 @@ Another possibility is to create a symbolic link in one to the envs_dirs folders
 --------
 
 ## Variáveis de ambiente com .env
-Utilizando a biblioteca python-dotenv. Utilizando essa biblioteca utilizo para buscar os valores e levar para dentro do código.
+Utilizando a biblioteca pythondotenv. Utilizando essa biblioteca utilizo para buscar os valores e levar para dentro do código.
 
 ### Exemplo
 USUARIO = andre
