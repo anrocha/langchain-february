@@ -29,3 +29,5 @@ EMAIL = ${USUARIO}@hotmail.com
 
 --------
 
+### Forçar sincronização
+git pull --allow-unrelated-histories
