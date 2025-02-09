@@ -31,18 +31,20 @@ modelo = ChatOpenAI(model='gpt-4o')
 parser = StrOutputParser()
 
 # Determinando variáveis
-idioma = 'Inglês'
+idioma_desejado = 'Inglês'
 texto = 'Quero aprender inglês'
 
 # Criar um template para mensagem
-template_mensagem = ChatPromptTemplate.from_messages([("system", "Traduza o texto para {idioma}"),("user", "Quero traduzir: {texto}"),])
+template_mensagem = ChatPromptTemplate.from_messages([("system", "Traduza o texto para {idioma_desejado}"),("user", "Quero traduzir: {texto}"),])
 
 
 # Usar chain para processamento
+#chain = template_mensagem | modelo | parser
 chain = template_mensagem | modelo | parser
 
+
 # Invokar cadeia de execuções
-texto = chain.invoke({"idioma":idioma, "texto":texto})
+texto = chain.invoke({"idioma_desejado":idioma_desejado, "texto":texto})
 
 # Exibir retorno
 print(texto)
